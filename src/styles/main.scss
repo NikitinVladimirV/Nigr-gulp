@@ -1,0 +1,14 @@
+// базовые подключения
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "effects";
+
+// подключения типовых компонентов страницы
+@import "./components/universal/search";
+@import "./components/universal/breadcrumbs";
+@import "./components/universal/counter";
+@import "./components/universal/card";
+
+// подключения стилей страниц
