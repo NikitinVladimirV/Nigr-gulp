@@ -1,10 +1,56 @@
 {
+  "switch": {
+    "scope": "html",
+    "prefix": "v-switch",
+    "body": [
+      "<div class=\"switch\">",
+      " <label class=\"label label--active\">",
+      "   <input id=\"switch-off\" type=\"radio\" name=\"switch\" value=\"off\" checked>",
+      " </label>",
+      " <label class=\"label\">",
+      "   <input id=\"switch-on\" type=\"radio\" name=\"switch\" value=\"on\">",
+      " </label>",
+      "</div>"
+    ],
+    "description":"Snippet for switch"
+  },
+  "range": {
+    "scope": "html",
+    "prefix": "v-range",
+    "body": [
+      "<div class=\"range\">",
+        "<label class=\"range__label\">",
+            "<input class=\"range__input\" type=\"text\" placeholder=\"от\">",
+          "</label>",
+          "<span class=\"range__symbol\">&mdash;</span>",
+          "<label class=\"range__label\">",
+            "<input class=\"range__input\" type=\"text\" placeholder=\"до\">",
+          "</label>",
+        "</div>"
+    ],
+    "description":"Snippet for range"
+  },
+  "picture": {
+    "prefix": "v-picture",
+    "body": [
+      "<picture>",
+      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
+      "  <img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
+  },
+
+
+
+
+
   "svguse": {
     "scope": "html",
     "prefix": "g-use",
     "body": [
       "<svg class=\"\">",
-      "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+      "  <use xlink:href=\"images/sprite.svg#$2\"></use>",
       "</svg>"
     ],
     "description": "Snippet for use svg sprites"
@@ -99,16 +145,7 @@
     ],
     "description": "Snippet for graph-modal basic structure"
   },
-  "picture": {
-    "prefix": "g-picture",
-    "body": [
-      "<picture>",
-      "  <source srcset=\"$1.webp\" type=\"image/webp\">",
-      "  <img loading=\"lazy\" src=\"$1.$2\" class=\"image\" width=\"$4\" height=\"$5\" alt=\"$3\">",
-      "</picture>"
-    ],
-    "description": "Snippet for basic logo structure"
-  },
+
   "svgimg": {
     "scope": "html",
     "prefix": "g-svgimg",

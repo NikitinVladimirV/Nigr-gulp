@@ -1,10 +1,9 @@
 .html {
   box-sizing: border-box;
-
-  // height: 100%;
-  // font-family: $font-family;
-  // -webkit-text-size-adjust: 100%;
-  // scroll-behavior: smooth;
+  height: 100%;
+  min-width: 1500px;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -15,18 +14,25 @@
 }
 
 .body {
+  min-height: 100%;
+  margin: 0;
   font-family: $font-family;
-  background-color: $color-white;
-  color: $color-black;
-
-  // margin: 0;
-  // min-width: 320px;
-  // min-height: 100%;
-  // font-size: 16px;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
-.main {
-  min-height: calc(100vh - 400px);
+.section {
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
 }
 
 a {
@@ -41,8 +47,8 @@ img {
 }
 
 .btn-reset {
-  border: none;
   padding: 0;
+  border: none;
   background: transparent;
   cursor: pointer;
 }
@@ -53,55 +59,30 @@ img {
   list-style: none;
 }
 
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-.d-none {
-  display: none;
-}
-
-.no-data {
-  width: max-content;
-  margin: 200px auto;
-  font-size: 50px;
-  font-weight: 600;
-  color: $color-red;
+.is-hidden {
+  display: none !important;
 }
 
 .container {
   max-width: $content-width;
   padding: 0 $container-offset;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
 }
 
 .title {
   margin: 0;
-  font-size: 36px;
-  line-height: 42px;
-  font-weight: 600;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 700;
 }
 
-.subtitle {
-  margin: 0;
-}
-
-.favorite-icon {
-  &--active {
-    svg path {
-      fill: red;
-    }
-  }
-}
-
-@media (max-width: 705px) {
-  .container {
-    padding: 0 10px;
-  }
+.scroll-point {
+  position: absolute;
+  top: -170px;
 }

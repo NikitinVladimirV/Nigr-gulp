@@ -1,5 +1,5 @@
 {
-  "files.associations": {
-    "*.cnxml": "xml"
+  "files.associations": { // настройка ассоциаций расширений файлов
+    "*.cnxml": "xml" // файлы *.cnxml воспринимать как xml
   }
 }

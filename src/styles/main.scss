@@ -4,11 +4,45 @@
 @import "fonts";
 @import "settings";
 @import "effects";
+// Далее импортируем файлы ваших стилей
 
-// подключения типовых компонентов страницы
-@import "./components/universal/search";
-@import "./components/universal/breadcrumbs";
-@import "./components/universal/counter";
-@import "./components/universal/card";
-
-// подключения стилей страниц
+// Стили ниже, следует удалить, это демо-стили
+svg {
+  display: block;
+}
+.header {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // right: 0;
+  // z-index: 10;
+  font-size: 30px;
+  color: white;
+  background-color: $color-bg;
+  &__container {
+    display: flex;
+    align-items: center;
+    h2 {
+      width: 50%;
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+}
+.section {
+  min-height: calc(100vh - 300px);
+  &__title {
+    margin-top: 150px;
+    text-align: center;
+  }
+}
+.footer {
+  font-size: 30px;
+  color: white;
+  background-color: $color-bg;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
