@@ -1,6 +1,6 @@
-# .git
-# .idea
-# .vscode
+.git
+.idea
+.vscode
 node_modules
 build
 dist
