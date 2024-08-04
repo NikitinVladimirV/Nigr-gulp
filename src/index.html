@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru" class="html">
-@include('partials/head.html', {
-"title": "Название Сайта",
-"description": "Описание Сайта"
-})
+  @include('partials/head.html', { "title": "Bytes & Rights - Регистрация ПО", "description": "Bytes & Rights - Регистрация в реестре российского программного обеспечения." })
 
-<body class="body">
-  @include('partials/header.html',
-  {"rus":"","en":""})
-  <main class="main">
-    <h1 class="visually-hidden">
-      Сборка Ni-Gr на Gulp 4
-    </h1>
-    <section class="section">
-      <div class="section__container container">
-        <h2 class="section__title title">
-          Для начала работы удалите все лишние стили и строки в index.html
-        </h2>
+  <body class="body">
+    @include('partials/header.html', {"rus":"header__languages-btn header__languages-btn--active","en":"header__languages-btn","1":"О вебинаре","2":"Ведущие","3":"Подробнее", "4":"Регистрация"})
+    <main class="main">
+      <div class="container">
+        <section class=""></section>
       </div>
-    </section>
-  </main>
-  @include('partials/footer.html', {})
-</body>
-
+    </main>
+    @include('partials/footer.html', {})
+  </body>
 </html>

@@ -1,19 +1,20 @@
 {
   "name": "nigr-build",
-  "version": "1.0.0",
   "description": "Сборка Gulp 4",
+  "author": "Nikitin-Gruzdam Vladimir",
+  "version": "1.1.0",
+  "license": "ISC",
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build",
     "backend": "gulp backend",
     "deploy": "gulp deploy",
+    "deployProd": "gulp deployProd",
     "zip": "gulp zipFile",
     "code": "editorconfig-checker",
     "html": "node-w3c-validator -f lint -evH -i dist/**/*.html"
   },
-  "author": "Nikitin-Gruzdam Vladimir",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -52,10 +53,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "accordion-js": "^3.3.2",
-    "choices.js": "^10.2.0",
-    "normalize.css": "^8.0.1",
-    "swiper": "^8.4.5",
-    "tippy.js": "^6.3.7"
+    "normalize.css": "^8.0.1"
   }
 }

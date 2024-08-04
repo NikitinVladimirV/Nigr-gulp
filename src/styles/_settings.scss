@@ -1,38 +1,65 @@
-.html {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  outline: none;
+}
+
+.html {
   height: 100%;
-  min-width: 1500px;
+  font-family: $font-family;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  outline: none;
-}
-
 .body {
-  min-height: 100%;
   margin: 0;
-  font-family: $font-family;
+  min-width: 100%;
+  min-width: 360px;
   font-size: $font-size;
-  line-height: $line-height;
 }
 
-.section {
-  position: relative;
+.container {
+  margin: 0 auto;
+  padding: 0 $container-offset;
+  max-width: $content-width;
+  overflow: hidden;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
 }
 
 .visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
+  position: fixed;
+  transform: scale(0);
+}
+
+.is-hidden {
+  display: none !important;
 }
 
 a {
@@ -46,43 +73,5 @@ img {
   object-fit: cover;
 }
 
-.btn-reset {
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.list-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.is-hidden {
-  display: none !important;
-}
-
-.container {
-  max-width: $content-width;
-  padding: 0 $container-offset;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.logo {
-  display: block;
-}
-
-.title {
-  margin: 0;
-  font-family: "RobotoSlab", sans-serif;
-  font-size: 60px;
-  line-height: 80px;
-  font-weight: 700;
-}
-
-.scroll-point {
-  position: absolute;
-  top: -170px;
+@media (max-width: 1024px) {
 }

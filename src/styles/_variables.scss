@@ -1,10 +1,9 @@
 // Base
 $font-family: "Roboto", sans-serif;
-$content-width: 1920px;
-$container-offset: 20px;
-$font-size: 20px;
-$line-height: 24px;
+$content-width: 1400px;
+$container-offset: 0px;
+$container: $content-width + $container-offset * 2;
+$font-size: 16px;
 
 // Colors
-$color-bg: black;
-$color-btn: #42e727;
+$color-black: #000000;

@@ -1,1 +1,1 @@
-import './components/index'
+// Здесь будут JS-компоненты
